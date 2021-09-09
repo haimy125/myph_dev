@@ -1,0 +1,34 @@
+{
+    "name": "myph_dev",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "build-css": "node-sass src/resources/scss/ --output src/public/css/",
+        "watch": "nodemon -e scss -x npm run build-css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/haimy125/myph_dev.git"
+    },
+    "author": "myph",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/haimy125/myph_dev/issues"
+    },
+    "homepage": "https://github.com/haimy125/myph_dev#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "lint-staged": "^11.1.2",
+        "mongoose": "^6.0.4",
+        "morgan": "^1.10.0",
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.12",
+        "prettier": "^2.3.2"
+    },
+    "devDependencies": {
+        "husky": "^4.2.5"
+    }
+}

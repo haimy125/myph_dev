@@ -1,0 +1,11 @@
+const e = require('express');
+const Course = require('../models/Course');
+const { mutiMongooseToObject } = require('../../util/mongoose');
+class CourseController {
+    //[GET] /show
+    show(req, res) {
+        res.send('COURSE DETAIL');
+    }
+}
+
+module.exports = new CourseController(); //exports de qua kia require. khi exports cai gi thi ben kia nhan duoc require cai do
